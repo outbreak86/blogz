@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+        <title>Blogz</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+		 <ul id="user-account">
+                <li><a href="/login">login</a></li>
+                <li><a href="/logout">logout</a></li>
+            </ul>
+            <ul>
+				<li><i class="em em---1"></i></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">All Posts</a></li>
+                <li><a href="/blog/newpost">New Post</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
